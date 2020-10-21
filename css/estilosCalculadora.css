@@ -1,0 +1,275 @@
+/* -------------------- BODY ----------------- */
+#modo {
+  background-color: aliceblue; /*Color de Body*/
+  transition: 1s ease all;
+}
+/* -------------------- BODY ----------------- */
+
+/*----------------- INPUT CALCULADORA --------------- */
+body .input1 {
+  font-size: 25px; /*-------INPUT CALCULADORA PRINCIPAL */
+  outline: none;
+  border: 1px solid #b6e2c7;
+  padding: 10px;
+  width: 70%;
+  font-family: "Commissioner", sans-serif;
+}
+body input:focus {
+  border: 1px solid #0fb1f8; /*--------- COLOR AZUL EN FOCUS */
+}
+.incorrectoInput {
+    border: 1.9px solid red;  /* COLOR ROJO EN EQUIVOCACION */
+}
+/*----------------- INPUT CALCULADORA --------------- */
+
+/*-------------------- TITULO PRINCIPAL ------------------ */
+body .tituloPrincipal {
+  left: 420px;
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  font-size: 100px;
+  color: black;
+}
+/*-------------------- TITULO PRINCIPAL ------------------ */
+
+/*-------------------- TABLA SIMBOLOS Y NUMEROS ------------------ */
+.card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.input_div {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+table {
+  margin-top: 20px;     /*--- TABLA */
+  width: 80%;
+  border-collapse: collapse;
+}
+table tr td {
+  font-family: "Commissioner", sans-serif;
+  padding: 10px;
+  background-color: white; /* ELEMENTOS TABLA */
+  width: 120px;
+  height: 40px;
+  text-align: center;
+  font-size: 37px;
+  border: 1px solid #cccccc;
+  border-spacing: 0px;
+  cursor: pointer;
+  transition: 0.28s ease;
+}
+
+table tr td:hover {
+  transform: scale(1.07); /* HOVER TABLA */
+  /*transition: 0.1s;*/
+  -webkit-box-shadow: 0px 0px 16px 4px rgba(204, 204, 204, 0.91);
+  -moz-box-shadow: 0px 0px 16px 4px rgba(204, 204, 204, 0.91);
+  box-shadow: 0px 0px 16px 4px rgba(204, 204, 204, 0.91);
+}
+
+@media (min-width: 900px) {
+  table {
+    width: 50rem;
+  }
+}
+/*-------------------- TABLA SIMBOLOS Y NUMEROS ------------------ */
+
+/*-------------------- SIMBOLO CALCU ------------------ */
+
+#calculadora {
+  color: black; /* SIMBOLO */
+  font-size: 40px;
+  padding: 1rem;
+  width: fit-content;
+  height: fit-content;
+  cursor: pointer;
+}
+
+/*-------------------- SIMBOLO CALCU ------------------ */
+
+/*-------------------- CAJA RESULTADO ------------------ */
+.divResultado {
+ /* DIV QUE CONTIENE EL LA ETIQUETA <P> DEL RESULTADO */
+  /* border: 1px solid #cccccc; */
+}
+.resultado {
+  position: relative; /* ETIQUETA <P> QUE CONTIENE EL RESULTADO */
+  color: black;
+  width: fit-content;
+  font-family: "Commissioner", sans-serif;
+}
+.incorrecto {
+  /* PROPIEDAD ROJA PA CUANDO INGRESO ALGO INCORRECTO O NO INGRESO NADA */
+  color: red;
+}
+/*-------------------- CAJA RESULTADO ------------------ */
+
+/*----------------- CALCULADORA VALOR ABSOLUTO --------------- */
+.subTitulo1 {
+  width: fit-content;
+  font-size: 42px;
+  font-family: "Commissioner", sans-serif;
+}
+
+body .input2 {
+  width: 70%; /*------- INPUT COMO TAL */
+  padding: 10px;
+  font-size: 25px;
+  outline: none;
+  border: 1px solid #b6e2c7;
+  font-family: "Commissioner", sans-serif;
+}
+
+#calculadora2 {
+  color: black; /*-------- SIMBOLO */
+    padding: 1rem;
+  font-size: 40px;
+  width: fit-content;
+  height: fit-content;
+  cursor: pointer;
+}
+
+#respuesta2 {       /*------ CONTENEDOR DE RESPUESTA */   
+  width: fit-content;
+  font-family: "Commissioner", sans-serif;
+}
+/*----------------- CALCULADORA VALOR ABSOLUTO --------------- */
+
+
+/*---------------- LOADING ------------------*/
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid rgb(34, 139, 224);
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: rgb(34, 139, 224) transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loader {
+  background-color: aliceblue;  /*------ LOADER COMO TAL */
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  transition: 0.8s ease;
+}
+
+.loader2 {
+  visibility: hidden;
+  opacity: 0;
+}
+/*---------------- LOADING ------------------*/
+
+
+/*---------------- CONVERSOR DE ANGULOS ------------------*/
+.subTitulo2 {
+  width: fit-content;
+  font-size: 42px;
+  font-family: "Commissioner", sans-serif;
+}
+
+body .input3 {
+  padding: 1rem;
+  width: 70%;
+  font-size: 25px;
+  outline: none;
+  border: 1px solid #b6e2c7;
+  font-family: "Commissioner", sans-serif;
+}
+
+#calculadora3 {
+  color: black; /*----- SIMBOLO CALCULADORA */
+  padding: 1rem;
+  font-size: 40px;
+  width: fit-content;
+  height: fit-content;
+  cursor: pointer;
+}
+
+#respuesta3 {
+  width: fit-content;
+  font-family: "Commissioner", sans-serif;
+}
+/*---------------- CONVERSOR DE ANGULOS ------------------*/
+
+/*---------------- CONVERSOR DE ANGULOS ------------------*/
+.content-select {
+  width: fit-content;
+}
+
+.content-select select {
+  display: inline-block;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: 1px solid #b6e2c7;
+  font-family: "Commissioner", sans-serif;
+  transition: 1s ease;
+  cursor: pointer;
+  padding: 5px 17px 5px 5px;
+  border-radius: 8px;
+  position: relative;
+  transition: all 0.25s ease;
+}
+
+.content-select select:focus {
+  border: 1px solid #0fb1f8;
+}
+
+.content-select i {
+  margin-top: 5px;
+  width: 8px;
+  height: 8px;
+  display: block;
+  border-left: 2px solid #2ac176;
+  border-bottom: 2px solid #2ac176;
+  transform: rotate(-45deg); /* Giramos el cuadrado */
+  transition: all 0.25s ease;
+}
+
+.content-select:hover i {
+  margin-top: 7px;
+  cursor: pointer;
+}
+
+/*---------------- CONVERSOR DE ANGULOS ------------------*/

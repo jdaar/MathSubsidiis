@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Inicio</title>
+    <link rel="stylesheet" href="css/estilosIndex/estilosIndex.css" id="estilosWhite" />
+    <link rel="stylesheet" href="css/estilosBarra/estilosBarra.css" id="estilosBarra"/>
+    <link
+      rel="shortcut icon"
+      href="images/home-solid.ico"
+      type="image/x-icon"
+    />
+    <script
+      src="https://kit.fontawesome.com/c77f1b7bf6.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Commissioner:wght@200&display=swap"
+      rel="stylesheet"
+    /> -->
+  </head>
+
+  <div class="lds-ring loader" id="loader"><div></div><div></div><div></div><div></div></div>
+
+  <i class="fas fa-bars" id="menu" onclick="menu();"></i>
+     <nav id="nav" class="oculto">        
+
+       <button class="boton botonLigth" id="boton" onclick="color();">
+         <span id="circulo"></span>
+         <span> <i class="far fa-sun"></i></span>
+         <span> <i class="fas fa-moon"></i></span>
+       </button>
+
+       <div class="listaPaginas">
+         <ul>
+           <li><i class="fas fa-home"></i><a href="index.html">Inicio</a></li>
+           <li><i class="fas fa-calculator"></i><a href="html/calculadora.html">Calculadora</a></li>
+         </ul>
+       </div>
+     </nav>
+
+     <body class="ligth" id="modo">
+
+          <footer>
+            <div class="footer">
+              <p>©Copyrigth 2020 | Jesus Garcia, Juan Arango, Jhonatan asprilla | Todos los derechos reservados</p>
+            </div>
+          </footer>
+
+        <script src="js/barraIndex.js"></script>
+        <script src="js/main.js"></script>
+     </body>

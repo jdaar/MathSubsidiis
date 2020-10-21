@@ -1,0 +1,330 @@
+/* -------------------- BODY ----------------- */
+
+body {
+    background-color: #525252;    /*Color de Body*/
+    transition: 1s ease all ;
+}
+
+/* -------------------- BODY ----------------- */
+
+
+ /*-------------------- INPUT CALCULADORA ------------------ */
+ body .input1 {
+    font-size: 25px; /*-------INPUT CALCULADORA PRINCIPAL */
+    outline: none;
+    border: 1px solid #b6e2c7;
+    padding: 10px;
+    width: 70%;
+    font-family: "Commissioner", sans-serif;
+  }
+  
+  body input:focus {
+    border: 1px solid #0fb1f8; /*--------- COLOR AZUL EN FOCUS */
+  }
+
+ .incorrectoInput {
+    border: 1.9px solid red;  /* COLOR ROJO EN EQUIVOCACION */
+}
+
+ /*-------------------- INPUT CALCULADORA ------------------ */
+
+ /*-------------------- TITULO PRINCIPAL ------------------ */
+
+ body .tituloPrincipal {
+    left: 420px;
+    text-align: center;
+    font-family: "Dancing Script", cursive;
+    font-size: 100px;
+     color: white;
+     /*transition: 1s ease all;*/
+ }
+
+ /*-------------------- TITULO PRINCIPAL ------------------ */
+
+
+
+ /*-------------------- TABLA SIMBOLOS Y NUMEROS ------------------ */
+
+ .card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .input_div {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  table {
+    margin-top: 20px;     /*--- TABLA */
+    width: 80%;
+    border-collapse: collapse;
+  }
+  table tr td {
+    font-family: "Commissioner", sans-serif;
+    padding: 10px;
+    background-color: orange; /* ELEMENTOS TABLA */
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    font-size: 37px;
+    border: 1px solid white;
+    border-spacing: 0px;
+    cursor: pointer;
+    transition: 0.28s ease;
+  }
+  
+  table tr td:hover {
+    transform: scale(1.07); /* HOVER TABLA */
+    /*transition: 0.1s;*/
+    -webkit-box-shadow: 0px 0px 16px 4px rgba(204, 204, 204, 0.91);
+    -moz-box-shadow: 0px 0px 16px 4px rgba(204, 204, 204, 0.91);
+    box-shadow: 0px 0px 16px 4px rgba(204, 204, 204, 0.91);
+  }
+  
+  @media (min-width: 900px) {
+    table {
+      width: 50rem;
+    }
+  }
+
+ /*-------------------- TABLA SIMBOLOS Y NUMEROS ------------------ */
+
+
+
+
+/*-------------------- SIMBOLO CALCU ------------------ */
+
+#calculadora {
+    color: white;      /* SIMBOLO */
+    font-size: 40px;
+    padding: 1rem;
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+  }
+
+ /*-------------------- SIMBOLO CALCU ------------------ */
+   
+    .divResultado {
+        position: absolute;
+   width: fit-content;  /* DIV QUE CONTIENE EL LA ETIQUETA <P> DEL RESULTADO */
+   /* border: 1px solid #cccccc; */
+     top: 230px;
+     left: 280px;
+    }
+   
+    .resultado {
+        position: relative;  /* ETIQUETA <P> QUE CONTIENE EL RESULTADO */
+        color: white;
+        width: fit-content;
+        font-family: 'Commissioner', sans-serif;
+   
+    }
+
+    .incorrecto {
+        color: red;  /* PROPIEDAD ROJA PA CUANDO INGRESO ALGO INCORRECTO O NO INGRESO NADA */
+    }
+
+    .subTitulo1 {
+    color: white;
+    position: relative;
+    top: 10px;
+    left: 200px;
+    width: fit-content;
+    font-size: 42px;
+    font-family: 'Commissioner', sans-serif;
+    transition: 0.8s ease;
+}
+
+body .input2 {        
+    position: relative;   /* INPUT COMO TAL */
+    font-size: 25px;
+    width: 1100px;
+    top: 100px;
+    left: 200px;
+    outline: none;
+    border: 2px solid #B6E2C7;
+    font-family: 'Commissioner', sans-serif;
+}
+
+#calculadora2 {
+    color: white;     /* SIMBOLO */
+    position: relative;
+    left: -963px;
+    top: 106.5px;
+    font-size: 40px;
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+}
+
+#respuesta2 {
+    color: white;
+    position: relative;
+    left: 250px;
+    width: fit-content;
+    font-family: 'Commissioner', sans-serif;
+}
+
+/*-------------- CONFIGURACION -------------*/
+
+#rue {
+    position:fixed;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 26px;
+    cursor: pointer;
+    z-index: 5;
+}
+#setting {
+    position:fixed;
+    bottom: 1rem;
+    right: 1rem;
+    height: 30px;
+    margin-right: 0px;
+    border-radius: 20px;
+    background-color: white;
+    width: fit-content;
+}
+#setting p {
+    position:fixed;
+    bottom: 1rem;
+    right: 1rem;
+    padding: 2px 10px 2px 34px;
+    font-family: 'Commissioner', sans-serif;
+}
+
+#inputDecimales {
+    position: relative;
+    visibility: hidden;
+    top: 100px;
+    left: -15px;
+    width: 110px;
+     outline: none;
+     border: 1px solid #B6E2C7;
+     font-family: 'Commissioner', sans-serif;
+}
+
+#aceptar {
+    visibility: hidden;
+    background-color: #0FB1F8;
+    text-decoration: none;
+    border-radius: 20px;
+    border: 1px solid #1D84FF;
+    position: absolute;
+    top: 415px;
+    left: 30px;
+    outline: none;
+    font-size: 10px;
+    font-family: 'Commissioner', sans-serif;
+    color: white;
+    -webkit-box-shadow: 1px 1.4px 2px 0px rgba(204,204,204,0.68);
+    -moz-box-shadow: 1px 1.4px 2px 0px rgba(204,204,204,0.68);
+    box-shadow: 1px 1.4px 2px 0px rgba(204,204,204,0.68);
+
+}
+
+#aceptar:hover {
+    background-color: #5fc5f1;
+}
+
+/*-------------- CONFIGURACION -------------*/
+
+/*---------------- LOADING ------------------*/
+.lds-ring {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border: 8px solid rgb(34, 139, 224);
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: rgb(34, 139, 224) transparent transparent transparent;
+  }
+  .lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+  }
+  .lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+  }
+  .lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+  }
+  @keyframes lds-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .loader {
+      background-color: aliceblue;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 10000;
+      transition: 0.8s ease;
+  }
+
+  .loader2 {
+      visibility: hidden;
+      opacity: 0;
+  }
+  
+/*---------------- LOADING ------------------*/
+
+/*---------------- CONVERSOR DE ANGULOS ------------------*/
+
+.subTitulo2 {
+    color: white;
+    position: relative;
+    top: 147px;
+    left: 200px;
+    width: fit-content;
+    font-size: 42px;
+    font-family: 'Commissioner', sans-serif;
+}
+
+body .input3 {        
+    position: relative;   /* INPUT COMO TAL */
+    font-size: 25px;
+    width: 1100px;
+    top: 250px;
+    left: 200px;
+    outline: none;
+    border: 1px solid #B6E2C7;
+    font-family: 'Commissioner', sans-serif;
+}
+
+#calculadora3 {
+    color: white;     /* SIMBOLO */
+    position: relative;
+    left: -963px;
+    top: 255px;
+    font-size: 40px;
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+}
+
+/*---------------- CONVERSOR DE ANGULOS ------------------*/
+

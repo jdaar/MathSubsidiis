@@ -1,0 +1,79 @@
+#rue {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 26px;
+    cursor: pointer;
+    z-index: 5;
+    background-color: #1D84FF;
+    padding: 10px;
+    border-radius: 100%;
+    color: white;
+    z-index: 11;
+  }
+
+#setting {
+    position:fixed;
+    bottom: 1rem;
+    right: 1rem;
+    height: 0;
+    margin-right: 0px;
+    border-radius: 20px;
+    background-color: white;
+    width: 171px;
+    z-index: 10;
+}
+#setting p {
+    padding: 2px 10px 2px 34px;
+    font-family: 'Commissioner', sans-serif;
+}
+#setting #opciones{
+    background:0;
+    width:inherit;
+    height:inherit;
+}
+
+#aceptar {
+    visibility: hidden;
+    background-color: #0FB1F8;
+    text-decoration: none;
+    border-radius: 20px;
+    border: 1px solid #1D84FF;
+    position: absolute;
+    top: 94px;
+    left: 10px;
+    outline: none;
+    font-size: 10px;
+    font-family: 'Commissioner', sans-serif;
+    color: white;
+    -webkit-box-shadow: 1px 1.4px 2px 0px rgba(204,204,204,0.68);
+    -moz-box-shadow: 1px 1.4px 2px 0px rgba(204,204,204,0.68);
+    box-shadow: 1px 1.4px 2px 0px rgba(204,204,204,0.68);
+}
+
+#aceptar:hover {
+    background-color: #5fc5f1;
+}
+
+#inputDecimales {
+    position: absolute;
+    visibility: hidden;
+    top: 29px;
+    left: 10px;
+    width: 110px;
+     outline: none;
+     border: 1px solid #B6E2C7;
+     font-family: 'Commissioner', sans-serif;
+}
+
+#redondearPorDefecto{
+    visibility: hidden;
+    position:absolute;
+    width:126px;
+    top: 53px;
+    left: 11px;
+}
+
+#redondearPorDefecto label{
+    font-family: 'Commissioner', sans-serif;
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/> 
+    <title>Calculadora</title>
+    
+    <link rel="stylesheet" href="../css/estilosCalculadora.css" id="estilosWhite" />
+    <link rel="stylesheet" href="../css/estilosBarra/estilosBarra.css" id="estilosBarra">
+    <link rel="stylesheet" href="../css/estilosSettings.css"/>
+    <link
+      rel="shortcut icon"
+      href="../images/calculator-solid.ico"
+      type="image/x-icon"
+    />
+    <script
+      src="https://kit.fontawesome.com/c77f1b7bf6.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Commissioner:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <script 
+    src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+    crossorigin="anonymous">
+    </script> 
+  </head>
+
+  <div class="lds-ring loader" id="loader"><div></div><div></div><div></div><div></div></div>
+
+     <i class="fas fa-bars" id="menu" onclick="menu();"></i>
+     <nav id="nav" class="oculto">        
+
+       <button class="boton botonLigth" id="boton" onclick="color();">
+         <span id="circulo"></span>
+         <span><i class="fas fa-sun"></i></span>
+         <span><i class="fas fa-moon"></i></span>
+       </button>
+
+       <div class="listaPaginas">
+         <ul>
+           <li><img src="../images/home-solid.ico" class="imgHome"><a href="../index.html">Inicio</a></li>
+           <li><img src="../images/calculator-solid.ico" class="imgCalcu"><a href="calculadora.html">Calculadora</a></li>
+         </ul>
+       </div>
+     </nav>
+
+        <body class="ligth" id="modo">
+        <h2 id="titulo" class="tituloPrincipal">Math Subsidiis</h2>
+
+        <table>
+          <tr></tr>
+        </table>
+
+        <div class="card">
+          
+          <div class="input_div">
+            <i class="fas fa-calculator" id="calculadora" onclick="pulsar();"></i>
+            <input type="text" id="input1" class="input1" placeholder="Ingrese la operacion a realizar" readonly/>
+          </div>
+          
+          
+          
+          <i id="rue" class="fas fa-cog" onclick="rueda();"></i>
+          <div id="setting">
+            <div id="opciones">
+              <button type="submit" id="aceptar">aceptar</button>
+              <input type="number" id="inputDecimales" placeholder="Decimales max">
+              <div id="redondearPorDefecto">
+                <label for="redondearPorDefecto">Evitar decimales</label>
+                <input type="checkbox" id="checkRedondear" name="redondearPorDefecto">
+              </div>
+            </div>
+          </div>
+          <div id="resultado" class="divResultado"></div>
+          
+          <table class="numeros">
+            <tr> 
+              <td onclick="seno();">sin</td>
+              <td onclick="signoCociente();">%</td>
+              <td onclick="numeros(7);">7</td>
+              <td onclick="numeros(8);">8</td>
+              <td onclick="numeros(9);">9</td>
+              <td onclick="signoSuma();">+</td>
+              <td onclick="back();"><i class="fas fa-backspace"></i></td>
+            </tr>
+            
+            <tr>
+              <td onclick="coseno();">cos</td>
+              <td onclick="signoPotenciacion();">^</td>
+              <td onclick="numeros(4);">4</td>
+              <td onclick="numeros(5);">5</td>
+              <td onclick="numeros(6);">6</td>
+              <td onclick="signoResta();">-</td>
+              <td onclick="retroceder();"><i class="fas fa-arrow-left"></i></td>
+            </tr>
+            
+            <tr>
+              <td onclick="tangente();">tan</td>
+              <td onclick="signoRadicacion();">√</td>
+              <td onclick="numeros(1);">1</td>
+              <td onclick="numeros(2);">2</td>
+              <td onclick="numeros(3);">3</td>
+              <td onclick="signoMultiplicacion();">*</td>
+              <td onclick="adelantar();"><i class="fas fa-arrow-right"></i></td>
+            </tr>
+            <tr>
+              <td onclick="logaritmo();">ln</td>
+              <td onclick = "parentesis1();">(</td>
+              <td onclick="parentesis2();">)</td>
+              <td onclick="punto();">.</td>
+              <td onclick="numeros(0);">0</td>
+              <td onclick="signoDivision();">/</td>
+              <td onclick="reinicio();">C</td>
+            </tr>
+          </table>
+        </div>
+        
+        <div class="card">
+          <h2 class="subTitulo1">Calcular valor absoluto</h2>
+          <div class="input_div">
+            <i class="fas fa-calculator" id="calculadora2" onclick="valorAbsoluto();"></i>
+            <input type="number" placeholder="Ingrese el numero a calcular valor absoluto" id="input2" class="input2">
+          </div>
+          <p id="respuesta2"></p>
+        </div>
+        <div class="card">
+          <h2 class="subTitulo2">Conversor unidades de angulo</h2>
+          <div class="input_div">
+            <i class="fas fa-calculator" id="calculadora3" onclick="conversorGrados();"></i>
+            <input type="number" placeholder="Ingrese el numero a convertir" id="input3" class="input3">
+          </div>
+          <p id="respuesta3"></p>
+          
+          <div class="content-select">
+            <select id="select">
+              <option>Seleccionar conversion <i class="fas fa-arrow-down"></i></option>
+              <option>Grados a Radianes</option>
+              <option>Radianes a grados</option>
+            </select>
+          </div> 
+        </div>
+          
+        </body>
+
+  <footer>
+    <div class="footer">
+      <p class="pieDePagina">©Copyrigth 2020 | Jesus Garcia, Juan Arango, Jhonatan asprilla | Todos los derechos reservados</p>
+    </div>
+  </footer>
+    <script src="../js/config-calculadora.js"></script>    
+    <script src="../js/calculadora.js"></script>
+    <script src="../js/animacionBarra.js"></script>
+    <script src="../js/loader.js"></script>
+</html>
