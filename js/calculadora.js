@@ -126,15 +126,13 @@ function pulsar() {
                          .replace("sin","Math.sin") 
                          .replace("cos","Math.cos(");
     var ev = eval(ult); 
-    console.log(ev)
-    if(checkRedondear.checked){
+    if(redondearPorDefectoBool){
         ev = Math.round(ev)
     }else{
         ev = parseFloat(ev.toFixed(numeroFixed));
     }
-    console.log(ev)
     if(ev != undefined){
-        resultado.value = "El resultado es: " + ev
+        resultado.innerText = "El resultado es: " + ev
         claseResultado.remove("incorrecto");
         input.style.border = "1px solid #B6E2C7";
         input.style.color = "unset";

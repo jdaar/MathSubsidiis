@@ -6,6 +6,18 @@
 /* -------------------- BODY ----------------- */
 
 /*----------------- INPUT CALCULADORA --------------- */
+
+/*--RED SPOT DE ADVERTENCIA--*/
+
+.warn_spot{
+  border-radius: 100%;
+  width: 10px;
+  height: 10px;
+  float: right;
+  background-color: red;
+  margin-left: 10px;
+}
+
 body .input1 {
   font-size: 25px; /*-------INPUT CALCULADORA PRINCIPAL */
   outline: none;

@@ -49,6 +49,7 @@
     -webkit-box-shadow: 1px 1.4px 2px 0px rgba(204,204,204,0.68);
     -moz-box-shadow: 1px 1.4px 2px 0px rgba(204,204,204,0.68);
     box-shadow: 1px 1.4px 2px 0px rgba(204,204,204,0.68);
+    cursor:pointer;
 }
 
 #aceptar:hover {
